@@ -1,0 +1,42 @@
+body{
+  font-family: 'Ubuntu', sans-serif;
+  margin: 5em;
+  color: white;
+  background-color:#000000;
+}
+
+h1{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  font-size:200px;
+  transform: rotateZ(90deg);
+}
+h2{
+  font-size:100px;
+}
+p{
+  font-size:20px;
+}
+p1{
+  font-size:20px;
+}
+
+a{
+  font-size:25px;
+  color:#B22222;
+  text-decoration: none;
+}
+
+p2{
+  font-size:50px;
+}
+
+.aa{
+  position: absolute;
+  width:50%;
+  right:0%;
+}
+.a1{
+  
+}
