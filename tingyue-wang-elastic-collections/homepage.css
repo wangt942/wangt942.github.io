@@ -1,0 +1,134 @@
+body {
+  font-family: 'Righteous', cursive;
+  margin: 5%;
+}
+
+
+a{
+  color:#000000;
+}
+a:hover{
+  text-decoration: none;
+}
+
+.page {
+  background: white;
+  height: calc(100vh - 10px);
+  display: grid;
+  grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
+  grid-template-rows: min-content min-content 1fr min-content;
+  gap: 1px;
+  animation: pulse 10s infinite;
+}
+.page > * {
+  padding: 1rem;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .page {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .page > * {
+    grid-column: 1/-1 !important;
+    grid-row: auto !important;
+  }
+}
+
+
+
+.page-header {
+  grid-column: 1/-1;
+  }
+.bb{
+  text-align: center;
+  font-size:94px;
+}
+.cc{
+  text-align:right;
+  font-size:24px;
+}
+
+
+.page-sidebar {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  font-size: 36px; 
+  margin: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align:center;
+}
+.art:hover{
+  color:white;
+  background-color:red;
+}
+.cartoon:hover{
+  color:white;
+  background-color:orange;
+}
+.comic:hover{
+  color:white;
+  background-color:Gold;
+}
+.electronics:hover{
+  color:white;
+  background-color:green;
+}
+.fashion:hover{
+  color:white;
+  background-color:blue;
+}
+.medical:hover{
+  color:white;
+  background-color:indigo;
+}
+.movie:hover{
+  color:white;
+  background-color:violet;
+}
+.sports:hover{
+  color:white;
+  background-color:#000000;
+}
+
+
+
+.page-main {
+  grid-column: 2/3;
+}
+@-webkit-keyframes scrollToUp {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 -1000px;
+    }
+  }
+  @keyframes scrollToUp {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 -10000px;
+    }
+  }
+#imgBgc{
+    height: 1000px;
+    background-image: url("https://cdn.glitch.com/6d9e753d-2cae-43b7-965a-112111cc0b7c%2F%E6%9C%AA%E6%A0%87%E9%A2%98-1.jpg?v=1618490009495");
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-animation: scrollToUp 12s linear infinite;
+    animation: scrollToUp 12s linear infinite;
+  }
+
+
+
+
+
+.page-footer {
+  font-size:48px;
+  text-align:center;
+  grid-column: 1/-1;
+}
+  
